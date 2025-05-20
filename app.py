@@ -26,7 +26,7 @@ if page == "Home":
 elif page == "Projects":
     st.title("📂 Projects")
 
-    # 🔁 Replace or update the list below with your latest projects
+    # ✅ All 7 original projects listed here
     projects = [
         {
             "title": "Invoice Extraction Bot",
@@ -40,7 +40,36 @@ elif page == "Projects":
             "tech": "LangChain, HuggingFace, Pinecone",
             "link": "https://github.com/dhanush-github/Conversational-AI-for-Website-Knowledge-Retrieval"
         },
-        # 👉 ADD or REMOVE projects below as needed
+        {
+            "title": "Customer Churn Analysis",
+            "description": "ML model to identify churn drivers & retention strategies.",
+            "tech": "Python, ML, Dashboards",
+            "link": "https://github.com/dhanush-github/Customer-Churn-Analysis"
+        },
+        {
+            "title": "Zomato Restaurants Analysis",
+            "description": "Excel-based analysis of restaurant metrics & new ventures.",
+            "tech": "Excel, Business Analytics",
+            "link": "https://github.com/dhanush-github/Zomato-Restaurants-Analysis"
+        },
+        {
+            "title": "Movie Recommender System",
+            "description": "Streamlit app using NLP and Word2Vec for recommendations.",
+            "tech": "Python, NLP, Streamlit",
+            "link": "https://github.com/dhanush-github/Movie-Recommender-System"
+        },
+        {
+            "title": "Bearing Fault Diagnosis",
+            "description": "ML/DL classification on NASA time series data.",
+            "tech": "Python, Deep Learning",
+            "link": "https://github.com/dhanush-github/Machine-Fault-Diagnosis"
+        },
+        {
+            "title": "Dynamic Flight Fare Prediction",
+            "description": "ML model predicting airline prices with time series features.",
+            "tech": "Python, EDA, ML",
+            "link": "https://github.com/dhanush-github/Dynamic-Flight-Fare-Prediction"
+        },
     ]
 
     for project in projects:
