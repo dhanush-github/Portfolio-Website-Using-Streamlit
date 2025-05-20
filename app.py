@@ -2,14 +2,11 @@
 import streamlit as st
 from PIL import Image
 
-# Set up page config
 st.set_page_config(page_title="Sai Dhanush | Portfolio", layout="wide")
 
-# Sidebar navigation
 pages = ["Home", "Projects", "Skills", "Resume", "Contact"]
 page = st.sidebar.radio("Navigate", pages)
 
-# --- HOME PAGE ---
 if page == "Home":
     st.title("👋 Hi, I'm N. Sai Dhanush")
     st.subheader("M.Tech in Data Science | Ex-McKinsey & Accenture | Full-Stack Data Scientist")
@@ -22,13 +19,14 @@ if page == "Home":
     st.markdown("---")
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("[📄 View Resume](https://drive.google.com/) (replace this link)")
+        st.markdown("[📄 View Resume](https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?id=1GXbme8GG9iEONbTZsCpNwDlluRw_VO79&export=download)")
         st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/n-sai-dhanush-2b5683112/)")
         st.markdown("[💻 GitHub](https://github.com/dhanush-github)")
 
-# --- PROJECTS PAGE ---
 elif page == "Projects":
     st.title("📂 Projects")
+
+    # 🔁 Replace or update the list below with your latest projects
     projects = [
         {
             "title": "Invoice Extraction Bot",
@@ -42,36 +40,7 @@ elif page == "Projects":
             "tech": "LangChain, HuggingFace, Pinecone",
             "link": "https://github.com/dhanush-github/Conversational-AI-for-Website-Knowledge-Retrieval"
         },
-        {
-            "title": "Customer Churn Analysis",
-            "description": "ML model to identify churn drivers & retention strategies.",
-            "tech": "Python, ML, Dashboards",
-            "link": "https://github.com/dhanush-github/Customer-Churn-Analysis"
-        },
-        {
-            "title": "Zomato Restaurants Analysis",
-            "description": "Excel-based analysis of restaurant metrics & new ventures.",
-            "tech": "Excel, Business Analytics",
-            "link": "https://github.com/dhanush-github/Zomato-Restaurants-Analysis"
-        },
-        {
-            "title": "Movie Recommender System",
-            "description": "Streamlit app using NLP and Word2Vec for recommendations.",
-            "tech": "Python, NLP, Streamlit",
-            "link": "https://github.com/dhanush-github/Movie-Recommender-System"
-        },
-        {
-            "title": "Bearing Fault Diagnosis",
-            "description": "ML/DL classification on NASA time series data.",
-            "tech": "Python, Deep Learning",
-            "link": "https://github.com/dhanush-github/Machine-Fault-Diagnosis"
-        },
-        {
-            "title": "Dynamic Flight Fare Prediction",
-            "description": "ML model predicting airline prices with time series features.",
-            "tech": "Python, EDA, ML",
-            "link": "https://github.com/dhanush-github/Dynamic-Flight-Fare-Prediction"
-        },
+        # 👉 ADD or REMOVE projects below as needed
     ]
 
     for project in projects:
@@ -80,7 +49,6 @@ elif page == "Projects":
         st.markdown(f"**Tech Stack:** {project['tech']}")
         st.markdown("---")
 
-# --- SKILLS PAGE ---
 elif page == "Skills":
     st.title("🧠 Skills & Tools")
     st.markdown("""
@@ -92,13 +60,11 @@ elif page == "Skills":
     **Domain Knowledge**: Supply Chain Analytics, AI Optimization, Forecasting  
     """)
 
-# --- RESUME PAGE ---
 elif page == "Resume":
     st.title("📄 Resume")
     st.write("You can view or download my resume below:")
-    st.markdown("[Click to View Resume (replace with your link)](https://drive.google.com/)")
+    st.markdown("[Click to View My Resume](https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?id=1GXbme8GG9iEONbTZsCpNwDlluRw_VO79&export=download)")
 
-# --- CONTACT PAGE ---
 elif page == "Contact":
     st.title("📬 Contact Me")
     st.markdown("""
