@@ -89,10 +89,16 @@ elif page == "Skills":
     **Domain Knowledge**: Supply Chain Analytics, AI Optimization, Forecasting  
     """)
 
+
 elif page == "Resume":
-    st.title("📄 Resume")
-    st.write("You can view or download my resume below:")
+    st.title("📄 Resume & Cover Letter")
+    st.write("You can view or download my documents below:")
+
+    st.markdown("### 📌 Resume")
     st.markdown("[Click to View My Resume](https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?id=1GXbme8GG9iEONbTZsCpNwDlluRw_VO79&export=download)")
+
+    st.markdown("### 📌 Cover Letter")
+    st.markdown("[Click to View My Cover Letter](https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?id=1iJhoZmC6kGEGPHFDqYTjy4HAFuexDYoA&export=download)")
 
 elif page == "Contact":
     st.title("📬 Contact Me")
